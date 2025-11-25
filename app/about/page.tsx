@@ -77,13 +77,13 @@ export default function AboutPage() {
                       <h3 className="text-xl md:text-2xl font-bold text-blue-600">2009</h3>
                       <h4 className="text-lg md:text-xl font-semibold text-gray-900 mb-2">Foundation</h4>
                       <p className="text-gray-600 text-sm md:text-base">
-                        Saint Gebriale School was founded with a vision to combine academic rigor with spiritual
+                        NAVS Global School was founded with a vision to combine academic rigor with spiritual
                         formation.
                       </p>
                     </div>
                     <div className="md:pl-12 order-1 md:order-2">
                       <img
-                        src="/placeholder.svg?height=200&width=300&text=School+Foundation"
+                        src="/NAVS_school.png?height=200&width=300&text=School+Foundation"
                         alt="School Foundation"
                         className="rounded-lg shadow-md w-full"
                       />
@@ -97,7 +97,7 @@ export default function AboutPage() {
                   <div className="grid md:grid-cols-2 gap-6 md:gap-8 items-center">
                     <div className="md:pr-12 order-1">
                       <img
-                        src="/placeholder.svg?height=200&width=300&text=Campus+Expansion"
+                        src="/campus.png?height=200&width=300&text=Campus+Expansion"
                         alt="Campus Expansion"
                         className="rounded-lg shadow-md w-full"
                       />
@@ -126,7 +126,7 @@ export default function AboutPage() {
                     </div>
                     <div className="md:pl-12 order-1 md:order-2">
                       <img
-                        src="/placeholder.svg?height=200&width=300&text=Excellence+Award"
+                        src="/excellece_award.png?height=200&width=300&text=Excellence+Award"
                         alt="Excellence Award"
                         className="rounded-lg shadow-md w-full"
                       />
@@ -140,7 +140,7 @@ export default function AboutPage() {
                   <div className="grid md:grid-cols-2 gap-6 md:gap-8 items-center">
                     <div className="md:pr-12 order-1">
                       <img
-                        src="/placeholder.svg?height=200&width=300&text=Today"
+                        src="/students.png?height=200&width=300&text=Today"
                         alt="Today"
                         className="rounded-lg shadow-md w-full"
                       />
@@ -171,7 +171,7 @@ export default function AboutPage() {
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900">Our Mission</h2>
               </div>
               <p className="text-gray-700 text-base md:text-lg leading-relaxed">
-                To provide exceptional education rooted in Christian values, fostering academic excellence and character
+                To provide exceptional education rooted in Spiritual values, fostering academic excellence and character
                 development, preparing students to become confident, compassionate leaders who make positive
                 contributions to society.
               </p>
@@ -275,7 +275,7 @@ export default function AboutPage() {
                   />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Discipline</h3>
-                <p className="text-gray-600">Church-inspired discipline building character and respect</p>
+                <p className="text-gray-600">inspired discipline building character and respect</p>
               </div>
             </div>
 

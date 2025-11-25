@@ -1,8 +1,8 @@
-# Saint Gebriale School Website - Mini Report
+# NAVS Global School Website - Mini Report
 
 ## 1. Project Explanation
 
-The Saint Gebriale School (SGS) website is a modern, responsive web application designed to showcase the school's mission, values, programs, and facilitate student registration. The website aims to provide prospective students and parents with comprehensive information about the school, its academic excellence, character-building focus, and leadership development.
+The NAVS Global School (NAVS) website is a modern, responsive web application designed to showcase the school's mission, values, programs, and facilitate student registration. The website aims to provide prospective students and parents with comprehensive information about the school, its academic excellence, character-building focus, and leadership development.
 
 ### Mission
 To provide exceptional education rooted in Christian values, fostering academic excellence and character development, preparing students to become confident, compassionate leaders who make positive contributions to society.
@@ -100,4 +100,4 @@ All dependencies are listed in `package.json`. Key dependencies include Next.js,
 
 ---
 
-This mini report provides an overview of the Saint Gebriale School website project, its structure, models, tools, and instructions for setup and running.
+This mini report provides an overview of the NAVS Global School website project, its structure, models, tools, and instructions for setup and running.

@@ -69,7 +69,7 @@ export default function ContactPage() {
                   <Phone className="h-5 md:h-6 w-5 md:w-6 text-white" />
                 </div>
                 <h3 className="font-bold text-gray-900 mb-2 text-sm md:text-base">Call Us</h3>
-                <p className="text-gray-600 text-sm md:text-base">+251 123 456 78</p>
+                <p className="text-gray-600 text-sm md:text-base">+91 9876543210</p>
                 <p className="text-gray-500 text-xs md:text-sm">Mon-Fri, 8am-5pm</p>
               </CardContent>
             </Card>
@@ -80,7 +80,7 @@ export default function ContactPage() {
                   <Mail className="h-5 md:h-6 w-5 md:w-6 text-white" />
                 </div>
                 <h3 className="font-bold text-gray-900 mb-2 text-sm md:text-base">Email Us</h3>
-                <p className="text-gray-600 text-sm md:text-base">info@saintgebrialeschool.edu</p>
+                <p className="text-gray-600 text-sm md:text-base">info@NAVSglobalschool.edu</p>
                 <p className="text-gray-500 text-xs md:text-sm">24hr response</p>
               </CardContent>
             </Card>
@@ -91,7 +91,7 @@ export default function ContactPage() {
                   <MapPin className="h-5 md:h-6 w-5 md:w-6 text-white" />
                 </div>
                 <h3 className="font-bold text-gray-900 mb-2 text-sm md:text-base">Visit Us</h3>
-                <p className="text-gray-600 text-sm md:text-base">Pissa</p>
+                <p className="text-gray-600 text-sm md:text-base">Hyderabad,Vishakapatnam</p>
                 <p className="text-gray-500 text-xs md:text-sm"></p>
               </CardContent>
             </Card>
@@ -119,7 +119,7 @@ export default function ContactPage() {
               <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 md:mb-6">Find Us</h2>
               <div className="aspect-video bg-gray-200 rounded-xl overflow-hidden shadow-lg mb-4 md:mb-6">
                 <img
-                  src="/placeholder.svg?height=400&width=600&text=School+Location"
+                  src="/NAVS_droneview.png?height=400&width=600&text=School+Location"
                   alt="School Location"
                   className="w-full h-full object-cover"
                 />

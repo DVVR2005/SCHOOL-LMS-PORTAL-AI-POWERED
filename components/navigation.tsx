@@ -25,11 +25,11 @@ export default function Navigation() {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-gradient-to-br from-amber-600 to-orange-600 rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-lg">SGS</span>
+            <div className="w-12 h-12 bg-gradient-to-br from-amber-600 to-orange-600 rounded-full flex items-center justify-center">
+              <span className="text-white font-bold text-lg">NAVS</span>
             </div>
             <div>
-              <div className="text-lg font-bold text-gray-900">Saint Gebriale School</div>
+              <div className="text-lg font-bold text-gray-900">NAVS Global School</div>
               <div className="text-xs text-amber-600">Excellence in Education</div>
             </div>
           </Link>

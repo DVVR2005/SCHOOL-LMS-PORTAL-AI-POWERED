@@ -183,7 +183,7 @@ export default function RegisterPage() {
 
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">Apply to SGS</h1>
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">Apply to NAVS</h1>
             <p className="text-lg md:text-2xl text-purple-100 mb-8 md:mb-10">
               Start your child's journey to excellence today
             </p>
@@ -303,7 +303,7 @@ export default function RegisterPage() {
                         required
                         value={formData.phone}
                         onChange={(e) => handleInputChange("phone", e.target.value)}
-                        placeholder="Enter phone number (e.g., +251912345678)"
+                        placeholder="Enter phone number (e.g., +91 1912345678)"
                         className="w-full"
                       />
                     </div>
@@ -333,7 +333,7 @@ export default function RegisterPage() {
                       disabled={isSubmitting}
                       className="w-full bg-purple-600 hover:bg-purple-700 text-white py-3 text-lg font-semibold rounded-lg disabled:opacity-50"
                     >
-                      {isSubmitting ? "Initiating Payment..." : "Pay Registration Fee (150 ETB)"}
+                      {isSubmitting ? "Initiating Payment..." : "Pay Registration Fee (15000 Rupees)"}
                     </Button>
                   </div>
 

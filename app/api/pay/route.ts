@@ -18,21 +18,21 @@ export async function POST(req: Request) {
       )
     }
 
-    const tx_ref = "SGS_" + nanoid()
+    const tx_ref = "NAVS_" + nanoid()
 
     const chapaPayload = {
-      amount: "150", // Registration fee in ETB
-      currency: "ETB",
+      amount: "15000", // Registration fee in Rupees
+      currency: "Rupees",
       email: body.email,
       first_name: body.student_name || body.name,
       phone_number: body.phone,
       tx_ref,
-      return_url: `https://v0-sgsschoolwebsite.vercel.app/register-success?student_name=${encodeURIComponent(body.student_name || "")}&grade=${encodeURIComponent(body.grade || "")}&parent_name=${encodeURIComponent(body.parent_name || "")}&email=${encodeURIComponent(body.email || "")}&phone=${encodeURIComponent(body.phone || "")}&message=${encodeURIComponent(body.message || "")}&tx_ref=${tx_ref}`,
-      callback_url: `https://v0-sgsschoolwebsite.vercel.app/api/payment-callback`,
+      return_url: `https://v0-navsschoolwebsite.vercel.app/register-success?student_name=${encodeURIComponent(body.student_name || "")}&grade=${encodeURIComponent(body.grade || "")}&parent_name=${encodeURIComponent(body.parent_name || "")}&email=${encodeURIComponent(body.email || "")}&phone=${encodeURIComponent(body.phone || "")}&message=${encodeURIComponent(body.message || "")}&tx_ref=${tx_ref}`,
+      callback_url: `https://v0-navsschoolwebsite.vercel.app/api/payment-callback`,
       customization: {
-        title: "SGS Registration", // Fixed: 16 characters exactly
-        description: "Secure your seat at SGS", // Fixed: Only allowed characters
-        logo: "https://v0-sgsschoolwebsite.vercel.app/logo.png",
+        title: "NAVS Registration", // Fixed: 16 characters exactly
+        description: "Secure your seat at NAVS", // Fixed: Only allowed characters
+        logo: "https://v0-navsschoolwebsite.vercel.app/logo.png",
       },
       metadata: {
         student_name: body.student_name,

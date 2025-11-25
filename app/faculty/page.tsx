@@ -6,23 +6,23 @@ import { GraduationCap, Award } from "lucide-react"
 export default function FacultyPage() {
   const facultyMembers = [
     {
-      name: "Teacher Hayelegnawu",
-      position: "Principal",
+      name: "Mr.Vardhan Reddy",
+      position: "Director of NAVS Global School",
       image: "/placeholder.svg?height=300&width=300&text=Teacher+Hayelegnawu",
       education: "Ph.D. in Educational Leadership",
       experience: "15+ years in education",
       quote: "Education is not just about academics; it's about shaping character and purpose.",
     },
     {
-      name: "Teacher Akelilu",
-      position: "Vice Principal",
+      name: "Mr.Sai Kumar",
+      position: "Director of NAVS Global School",
       image: "/placeholder.svg?height=300&width=300&text=Teacher+Akelilu",
       education: "M.Ed. in Educational Administration",
       experience: "12 years in education",
       quote: "We strive to create an environment where every student can thrive.",
     },
     {
-      name: "Mrs. Simerete",
+      name: "Ms.Guru Nandini",
       position: "Kindergarten Lead",
       image: "/placeholder.svg?height=300&width=300&text=Mrs.+Simerete",
       education: "B.A. in Early Childhood Education",
@@ -30,7 +30,7 @@ export default function FacultyPage() {
       quote: "Young minds are like seeds; they need nurturing, care, and the right environment to grow.",
     },
     {
-      name: "Mrs. Bethlehem",
+      name: "Mr.Abhilash Reddy",
       position: "Primary School Lead",
       image: "/placeholder.svg?height=300&width=300&text=Mrs.+Bethlehem",
       education: "M.A. in Elementary Education",
@@ -38,7 +38,7 @@ export default function FacultyPage() {
       quote: "Building strong foundations in these formative years is essential for future success.",
     },
     {
-      name: "Mrs. Rahel",
+      name: "Mr. Rahul",
       position: "Middle School Lead",
       image: "/placeholder.svg?height=300&width=300&text=Mrs.+Rahel",
       education: "Ph.D. in Curriculum Development",
@@ -46,7 +46,7 @@ export default function FacultyPage() {
       quote: "Middle school is a crucial transition period where students discover their unique strengths.",
     },
     {
-      name: "Mrs. Tsion",
+      name: "Mr.Arjun Reddy",
       position: "High School Lead",
       image: "/placeholder.svg?height=300&width=300&text=Mrs.+Tsion",
       education: "M.Ed. in Secondary Education",

@@ -147,7 +147,7 @@ export default function RegisterSuccessPage() {
           <div className="max-w-4xl mx-auto text-center">
             <CheckCircle className="w-20 h-20 text-white mx-auto mb-6" />
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">Registration Complete!</h1>
-            <p className="text-lg md:text-2xl text-green-100 mb-8">Welcome to the Saint Gebriale School family</p>
+            <p className="text-lg md:text-2xl text-green-100 mb-8">Welcome to the NAVS Global School family</p>
           </div>
         </div>
       </section>
@@ -276,7 +276,7 @@ export default function RegisterSuccessPage() {
               <h3 className="text-lg font-semibold text-gray-900 mb-4">Need Help?</h3>
               <p className="text-gray-600 mb-2">If you have any questions, please contact our admissions office:</p>
               <p className="text-gray-900 font-semibold">
-                📞 +251-11-XXX-XXXX | ✉️ admissions@saintgebrialeschool.edu.et
+                📞 +91-98-XXX-XXXX | ✉️ admissions@NAVSglobalschool.edu.et
               </p>
             </div>
           </div>

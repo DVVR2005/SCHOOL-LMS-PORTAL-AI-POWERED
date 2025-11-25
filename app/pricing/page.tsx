@@ -17,8 +17,8 @@ export default function PricingPage() {
       description: "Ages 3-5 • Foundation Learning",
       icon: Heart,
       color: "from-pink-500 to-rose-500",
-      monthly: 1200,
-      annual: 12000,
+      monthly: 12000,
+      annual: 120000,
       popular: false,
       features: [
         "Play-based learning curriculum",
@@ -36,8 +36,8 @@ export default function PricingPage() {
       description: "Grades 1-6 • Core Foundation",
       icon: BookOpen,
       color: "from-blue-500 to-cyan-500",
-      monthly: 1500,
-      annual: 15000,
+      monthly: 15000,
+      annual: 150000,
       popular: true,
       features: [
         "Comprehensive academic curriculum",
@@ -56,8 +56,8 @@ export default function PricingPage() {
       description: "Grades 7-8 • Academic Excellence",
       icon: Users,
       color: "from-amber-500 to-orange-500",
-      monthly: 1800,
-      annual: 18000,
+      monthly: 18000,
+      annual: 180000,
       popular: false,
       features: [
         "Advanced academic curriculum",
@@ -77,8 +77,8 @@ export default function PricingPage() {
       description: "Grades 9-12 • University Preparation",
       icon: Trophy,
       color: "from-purple-500 to-indigo-500",
-      monthly: 2200,
-      annual: 22000,
+      monthly: 22000,
+      annual: 220000,
       popular: false,
       features: [
         "University preparatory curriculum",
@@ -97,11 +97,11 @@ export default function PricingPage() {
   ]
 
   const additionalFees = [
-    { name: "Registration Fee", amount: 500, description: "One-time enrollment fee" },
-    { name: "Uniform Package", amount: 300, description: "Complete school uniform set" },
-    { name: "Books & Materials", amount: 400, description: "Annual textbooks and supplies" },
-    { name: "Transportation", amount: 200, description: "Monthly bus service (optional)" },
-    { name: "Lunch Program", amount: 150, description: "Monthly meal plan (optional)" },
+    { name: "Registration Fee", amount: 15000, description: "One-time enrollment fee" },
+    { name: "Uniform Package", amount: 5000, description: "Complete school uniform set" },
+    { name: "Books & Materials", amount: 10000, description: "Annual textbooks and supplies" },
+    { name: "Transportation", amount: 20000, description: "Monthly bus service (optional)" },
+    { name: "Lunch Program", amount: 15000, description: "Monthly meal plan (optional)" },
   ]
 
   return (
@@ -179,7 +179,7 @@ export default function PricingPage() {
                 <CardContent className="text-center pb-6">
                   <div className="mb-6">
                     <span className="text-4xl font-bold text-gray-900">{price.toLocaleString()}</span>
-                    <span className="text-gray-600 ml-2">ETB</span>
+                    <span className="text-gray-600 ml-2">Rupees</span>
                     <div className="text-sm text-gray-500 mt-1">
                       per {billingCycle === "monthly" ? "month" : "year"}
                     </div>
@@ -217,7 +217,7 @@ export default function PricingPage() {
               <div key={index} className="bg-gray-50 rounded-lg p-6 hover:bg-gray-100 transition-colors duration-300">
                 <div className="flex justify-between items-start mb-2">
                   <h3 className="font-semibold text-gray-900">{fee.name}</h3>
-                  <span className="text-xl font-bold text-amber-600">{fee.amount} ETB</span>
+                  <span className="text-xl font-bold text-amber-600">{fee.amount} Rupees</span>
                 </div>
                 <p className="text-gray-600 text-sm">{fee.description}</p>
               </div>
@@ -265,7 +265,7 @@ export default function PricingPage() {
         <div className="text-center bg-white rounded-2xl shadow-xl p-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Financial Assistance Available</h2>
           <p className="text-gray-600 text-lg mb-6 max-w-2xl mx-auto">
-            We believe every child deserves quality education. Saint Gebriale School offers need-based financial aid and
+            We believe every child deserves quality education. NAVS Global School offers need-based financial aid and
             merit scholarships to qualified families.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

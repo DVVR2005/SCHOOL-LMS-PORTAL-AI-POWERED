@@ -15,14 +15,14 @@ export default function EventsPage() {
       date: "April 25, 2024",
       location: "School Art Gallery",
       description: "Students displayed their creative masterpieces in painting, sculpture, and digital art.",
-      image: "/placeholder.svg?height=200&width=300&text=Art+Exhibition",
+      image: "/art_2.png?height=200&width=300&text=Art+Exhibition",
     },
     {
-      title: "Easter Charity Drive",
+      title: "Annual Day Celebrations",
       date: "March 28, 2024",
       location: "School Hall",
-      description: "Students and families came together to collect donations for local families in need during Easter.",
-      image: "/placeholder.svg?height=200&width=300&text=Easter+Charity",
+      description: "Students and families came together to celebrate school annual day.",
+      image: "/annual_day.png?height=200&width=300&text=Easter+Charity",
     },
     {
       title: "Christmas Charity Festival",
@@ -30,14 +30,14 @@ export default function EventsPage() {
       location: "School Auditorium",
       description:
         "Annual Christmas celebration with performances and charity collection for underprivileged children.",
-      image: "/placeholder.svg?height=200&width=300&text=Christmas+Charity",
+      image: "/charithy.png?height=200&width=300&text=Christmas+Charity",
     },
     {
       title: "Annual Sports Festival",
       date: "November 15, 2023",
       location: "School Sports Complex",
       description: "Inter-house sports competition featuring athletics, team sports, and individual challenges.",
-      image: "/placeholder.svg?height=200&width=300&text=Sports+Festival",
+      image: "/sports_day.png?height=200&width=300&text=Sports+Festival",
     },
   ]
 
@@ -47,7 +47,7 @@ export default function EventsPage() {
       grades: "Kindergarten",
       date: "Monthly",
       description: "Fun outdoor play sessions at the local playground to develop motor skills and social interaction.",
-      image: "/placeholder.svg?height=200&width=300&text=Playground+Trip",
+      image: "/play_adventure.png?height=200&width=300&text=Playground+Trip",
       icon: Backpack,
     },
     {
@@ -56,7 +56,7 @@ export default function EventsPage() {
       date: "October 2024",
       description:
         "Educational visit to learn about manufacturing processes and quality control in beverage production.",
-      image: "/placeholder.svg?height=200&width=300&text=Pepsi+Factory",
+      image: "/pepsi_factory_tour.png?height=200&width=300&text=Pepsi+Factory",
       icon: Bus,
     },
     {
@@ -64,7 +64,7 @@ export default function EventsPage() {
       grades: "Grades 5-8",
       date: "September 2024",
       description: "Hands-on learning experience about chemical processes and sustainable manufacturing practices.",
-      image: "/placeholder.svg?height=200&width=300&text=Soap+Factory",
+      image: "/soap_factory.png?height=200&width=300&text=Soap+Factory",
       icon: Bus,
     },
     {
@@ -72,7 +72,7 @@ export default function EventsPage() {
       grades: "Grades 9-10",
       date: "November 2024",
       description: "University preparation visit to explore higher education opportunities and campus life.",
-      image: "/placeholder.svg?height=200&width=300&text=Hawassa+College",
+      image: "/college_visit.png?height=200&width=300&text=Hawassa+College",
       icon: Plane,
     },
     {
@@ -81,8 +81,8 @@ export default function EventsPage() {
       date: "December 2024",
       description:
         "Advanced technology exploration and innovation workshops for senior students preparing for university.",
-      image: "/placeholder.svg?height=200&width=300&text=Tech+Centre",
-      icon: Plane,
+      image: "/technology.png?height=200&width=300&text=Tech+Centre",
+      icon: Bus,
     },
   ]
 
@@ -213,7 +213,7 @@ export default function EventsPage() {
               <div className="bg-orange-50 p-4 md:p-6 rounded-xl border border-orange-200 max-w-4xl mx-auto mt-12">
                 <h3 className="text-lg md:text-xl font-bold text-orange-800 mb-3">About Our Educational Trips</h3>
                 <p className="text-orange-700 text-sm md:text-base">
-                  At Saint Gebriale School, we believe in learning beyond the classroom. Our carefully planned
+                  At NAVS Global School, we believe in learning beyond the classroom. Our carefully planned
                   educational trips provide students with enriching experiences that complement our curriculum. Each
                   grade level participates in age-appropriate trips designed to enhance learning, build community, and
                   create lasting memories.

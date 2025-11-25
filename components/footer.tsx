@@ -9,11 +9,11 @@ export default function Footer() {
           {/* School Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-gradient-to-br from-amber-600 to-orange-600 rounded-full flex items-center justify-center">
-                <span className="text-white font-bold">SGS</span>
+              <div className="w-11 h-11 bg-gradient-to-br from-amber-600 to-orange-600 rounded-full flex items-center justify-center">
+                <span className="text-white font-bold">NAVS</span>
               </div>
               <div>
-                <div className="font-bold">Saint Gebriale School</div>
+                <div className="font-bold">NAVS Global School</div>
                 <div className="text-sm text-amber-400">Excellence in Education</div>
               </div>
             </div>
@@ -78,15 +78,15 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <MapPin className="h-4 w-4 text-amber-400" />
-                <span className="text-gray-300 text-sm">Pissa</span>
+                <span className="text-gray-300 text-sm">Hyderabad,Vishakapatnam</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-4 w-4 text-amber-400" />
-                <span className="text-gray-300 text-sm">+251 123 456 78</span>
+                <span className="text-gray-300 text-sm">+91 9876543210</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-4 w-4 text-amber-400" />
-                <span className="text-gray-300 text-sm">info@saintgebrialeschool.edu</span>
+                <span className="text-gray-300 text-sm">info@NAVSglobalschool.edu</span>
               </div>
             </div>
           </div>
@@ -94,7 +94,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-gray-400 text-sm">
-            © 2024 Saint Gebriale School. All rights reserved. | Building tomorrow's leaders with purpose and grace.
+            © 2025 NAVS Global School. All rights reserved. | Building tomorrow's leaders with purpose and grace.
           </p>
         </div>
       </div>

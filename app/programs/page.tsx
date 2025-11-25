@@ -24,7 +24,7 @@ export default function ProgramsPage() {
         "Creative arts and music",
         "Character development",
       ],
-      image: "/placeholder.svg?height=300&width=500&text=Kindergarten+Program",
+      image: "/kindergarden.jpeg?height=300&width=500&text=Kindergarten+Program",
     },
     {
       title: "Primary School",
@@ -34,7 +34,7 @@ export default function ProgramsPage() {
       fullDesc:
         "Our Primary School program builds strong academic foundations while fostering creativity, critical thinking, and moral development. Students engage with a comprehensive curriculum that prepares them for future academic success.",
       features: ["Core subjects mastery", "STEM exploration", "Leadership development", "Community service"],
-      image: "/placeholder.svg?height=300&width=500&text=Primary+School+Program",
+      image: "/primary_school.png?height=300&width=500&text=Primary+School+Program",
     },
     {
       title: "Middle School",
@@ -49,7 +49,7 @@ export default function ProgramsPage() {
         "Student government",
         "Peer mentoring",
       ],
-      image: "/placeholder.svg?height=300&width=500&text=Middle+School+Program",
+      image: "/middle_school.png?height=300&width=500&text=Middle+School+Program",
     },
     {
       title: "High School",
@@ -59,7 +59,7 @@ export default function ProgramsPage() {
       fullDesc:
         "Our High School program provides rigorous academic preparation for university admission while developing mature, responsible leaders. Students engage with challenging coursework, advanced placement options, and real-world applications.",
       features: ["Advanced Placement courses", "University counseling", "Research projects", "Leadership positions"],
-      image: "/placeholder.svg?height=300&width=500&text=High+School+Program",
+      image: "/high_school.png?height=300&width=500&text=High+School+Program",
     },
   ]
 

@@ -43,7 +43,7 @@ export default function HomePage() {
               </h1>
 
               <p className="text-xl text-gray-700 leading-relaxed">
-                At Saint Gebriale School, we shape character, nurture brilliance, and build tomorrow's leaders with
+                At NAVS Global School, we shape character, nurture brilliance, and build tomorrow's leaders with
                 purpose and grace.
               </p>
 
@@ -69,7 +69,7 @@ export default function HomePage() {
 
             {/* Right Side - Images */}
             <div className="relative">
-              <div className="relative w-full h-[500px] rounded-2xl overflow-hidden shadow-2xl">
+              <div className="relative w-full h-[400px] rounded-2xl overflow-hidden shadow-2xl">
                 {heroImages.map((image, index) => (
                   <div
                     key={index}
@@ -78,10 +78,10 @@ export default function HomePage() {
                     }`}
                   >
                     <img
-                      src={image || "/placeholder.svg"}
-                      alt={`SGS School Life ${index + 1}`}
-                      className="w-full h-full object-cover"
-                    />
+                        src="https://media.istockphoto.com/id/578291882/photo/indian-kids-studying-on-study-table.jpg?s=612x612&w=0&k=20&c=XVwGhbMTIko1fht8W3maUIB6U8ztBMRPmZR27P2j1j8="
+                        alt="School Foundation"
+                        className="rounded-lg shadow-md w-full"
+                      />
                   </div>
                 ))}
               </div>
@@ -118,7 +118,7 @@ export default function HomePage() {
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Why Choose SGS?</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Why Choose NAVS?</h2>
             <p className="text-xl text-gray-600">Excellence in education with strong values</p>
           </div>
 

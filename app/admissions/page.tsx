@@ -55,9 +55,9 @@ export default function AdmissionsPage() {
       <section className="py-12 md:py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 md:mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Parents Choose SGS</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Parents Choose NAVS</h2>
             <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
-              Join the hundreds of families who've discovered the SGS difference
+              Join the hundreds of families who've discovered the NAVS difference
             </p>
           </div>
 
@@ -95,7 +95,7 @@ export default function AdmissionsPage() {
                 </div>
                 <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">Lifelong Advantage</h3>
                 <p className="text-gray-600 text-sm md:text-base">
-                  An SGS education is an investment that pays dividends throughout your child's life and career.
+                  An NAVS education is an investment that pays dividends throughout your child's life and career.
                 </p>
               </CardContent>
             </Card>
@@ -114,20 +114,20 @@ export default function AdmissionsPage() {
             {[
               {
                 quote:
-                  "Enrolling our daughter at SGS was the best decision we ever made for her education. The transformation in her confidence and academic abilities has been remarkable.",
-                author: "Jennifer K., Parent of 8th Grader",
+                  "Enrolling our daughter at NAVS was the best decision we ever made for her education. The transformation in her confidence and academic abilities has been remarkable.",
+                author: " Maheshbabu G., Parent of 8th Grader",
                 stars: 5,
               },
               {
                 quote:
-                  "The teachers at SGS don't just teach subjects; they mentor students and inspire excellence. My son was accepted to his dream university with a scholarship.",
-                author: "Michael T., Parent of Graduate",
+                  "The teachers at NAVS don't just teach subjects; they mentor students and inspire excellence. My son was accepted to his dream university with a scholarship.",
+                author: "Ravi T., Parent of Graduate",
                 stars: 5,
               },
               {
                 quote:
-                  "The values-based education at SGS has shaped our children into compassionate, responsible young adults. Worth every penny of the investment.",
-                author: "Sarah and David L., Parents",
+                  "The values-based education at NAVS has shaped our children into compassionate, responsible young adults. Worth every penny of the investment.",
+                author: "Sarah and Arjun , Parents",
                 stars: 5,
               },
             ].map((testimonial, index) => (

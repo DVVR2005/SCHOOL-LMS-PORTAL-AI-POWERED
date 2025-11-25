@@ -9,8 +9,8 @@ export default function TestimonialsSection() {
   const testimonials = [
     {
       quote:
-        "SGS transformed my daughter's confidence and character. The teachers truly care about each student's growth and development.",
-      author: "Jennifer K.",
+        "NAVS transformed my daughter's confidence and character. The teachers truly care about each student's growth and development.",
+      author: "MaheshBabu G.",
       role: "Parent of 8th Grader",
       image: "/placeholder.svg?height=80&width=80&text=JK",
       stars: 5,
@@ -19,7 +19,7 @@ export default function TestimonialsSection() {
     {
       quote:
         "The academic preparation here is exceptional. My son was well-prepared for university challenges and received multiple scholarship offers.",
-      author: "Michael T.",
+      author: "Ravi Kiran T.",
       role: "Parent of Graduate",
       image: "/placeholder.svg?height=80&width=80&text=MT",
       stars: 5,
@@ -27,8 +27,8 @@ export default function TestimonialsSection() {
     },
     {
       quote:
-        "The values-based education at SGS has shaped our children into compassionate, responsible young adults. Worth every investment.",
-      author: "Sarah L.",
+        "The values-based education at NAVS has shaped our children into compassionate, responsible young adults. Worth every investment.",
+      author: "Sarah & Arjun L.",
       role: "Parent of Two Students",
       image: "/placeholder.svg?height=80&width=80&text=SL",
       stars: 5,
@@ -37,7 +37,7 @@ export default function TestimonialsSection() {
     {
       quote:
         "Outstanding faculty and curriculum. Our daughter developed leadership skills and confidence that will serve her throughout life.",
-      author: "David R.",
+      author: "Jai Krishna R.",
       role: "Parent of Graduate",
       image: "/placeholder.svg?height=80&width=80&text=DR",
       stars: 5,
@@ -45,8 +45,8 @@ export default function TestimonialsSection() {
     },
     {
       quote:
-        "The spiritual foundation combined with academic excellence creates well-rounded students. Highly recommend SGS to any family.",
-      author: "Maria G.",
+        "The spiritual foundation combined with academic excellence creates well-rounded students. Highly recommend NAVS to any family.",
+      author: "Sam",
       role: "Parent of 6th Grader",
       image: "/placeholder.svg?height=80&width=80&text=MG",
       stars: 5,
@@ -60,7 +60,7 @@ export default function TestimonialsSection() {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-white mb-4">What Parents Say</h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Hear from families who've experienced the SGS difference
+            Hear from families who've experienced the NAVS difference
           </p>
         </div>
 
