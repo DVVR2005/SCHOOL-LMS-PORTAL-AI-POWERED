@@ -6,41 +6,47 @@ export async function POST(req: Request) {
     const body = await req.json()
     console.log("Payment request received:", body)
 
-    // Validate environment variables
-    if (!process.env.CHAPA_SECRET_KEY) {
-      console.error("CHAPA_SECRET_KEY environment variable is not set")
-      return NextResponse.json(
-        {
-          success: false,
-          message: "Payment service configuration error. Please contact support.",
-        },
-        { status: 500 },
-      )
+    const chapaKey = process.env.CHAPA_SECRET_KEY
+    const isDemo = !chapaKey || chapaKey.includes("your-chapa-secret-key") || chapaKey === ""
+
+    const isInvoice = !!body.invoiceId
+    const amount = isInvoice ? String(body.amount) : "15000"
+    const tx_ref = isInvoice ? `NAVS_FEE_${body.invoiceId}_${nanoid()}` : "NAVS_" + nanoid()
+    const appUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"
+
+    if (isDemo) {
+      console.log("Demo Mode Active: Simulating payment success")
+      return NextResponse.json({
+        success: true,
+        url: isInvoice 
+          ? `${appUrl}/${body.role || "student"}/fees?payment_success=true&invoice_id=${body.invoiceId}&tx_ref=${tx_ref}`
+          : `${appUrl}/register-success?student_name=${encodeURIComponent(body.student_name || "")}&grade=${encodeURIComponent(body.grade || "")}&parent_name=${encodeURIComponent(body.parent_name || "")}&email=${encodeURIComponent(body.email || "")}&phone=${encodeURIComponent(body.phone || "")}&message=${encodeURIComponent(body.message || "")}&tx_ref=${tx_ref}`,
+        tx_ref,
+      })
     }
 
-    const tx_ref = "NAVS_" + nanoid()
-
     const chapaPayload = {
-      amount: "15000", // Registration fee in Rupees
-      currency: "Rupees",
+      amount,
+      currency: "INR",
       email: body.email,
       first_name: body.student_name || body.name,
       phone_number: body.phone,
       tx_ref,
-      return_url: `https://v0-navsschoolwebsite.vercel.app/register-success?student_name=${encodeURIComponent(body.student_name || "")}&grade=${encodeURIComponent(body.grade || "")}&parent_name=${encodeURIComponent(body.parent_name || "")}&email=${encodeURIComponent(body.email || "")}&phone=${encodeURIComponent(body.phone || "")}&message=${encodeURIComponent(body.message || "")}&tx_ref=${tx_ref}`,
-      callback_url: `https://v0-navsschoolwebsite.vercel.app/api/payment-callback`,
+      return_url: isInvoice 
+        ? `${appUrl}/${body.role || "student"}/fees?payment_success=true&invoice_id=${body.invoiceId}&tx_ref=${tx_ref}`
+        : `${appUrl}/register-success?student_name=${encodeURIComponent(body.student_name || "")}&grade=${encodeURIComponent(body.grade || "")}&parent_name=${encodeURIComponent(body.parent_name || "")}&email=${encodeURIComponent(body.email || "")}&phone=${encodeURIComponent(body.phone || "")}&message=${encodeURIComponent(body.message || "")}&tx_ref=${tx_ref}`,
+      callback_url: `${appUrl}/api/payment-callback`,
       customization: {
-        title: "NAVS Registration", // Fixed: 16 characters exactly
-        description: "Secure your seat at NAVS", // Fixed: Only allowed characters
-        logo: "https://v0-navsschoolwebsite.vercel.app/logo.png",
+        title: isInvoice ? "NAVS Tuition Fee" : "NAVS Registration",
+        description: isInvoice ? `Clearance for Invoice #${body.invoiceId}` : "Secure your seat at NAVS",
+        logo: `${appUrl}/logo.png`,
       },
       metadata: {
-        student_name: body.student_name,
-        grade: body.grade,
-        parent_name: body.parent_name,
+        student_name: body.student_name || body.name,
         email: body.email,
         phone: body.phone,
-        message: body.message,
+        invoice_id: body.invoiceId || null,
+        is_invoice: isInvoice,
       },
     }
 

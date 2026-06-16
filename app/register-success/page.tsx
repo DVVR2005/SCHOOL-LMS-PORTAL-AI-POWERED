@@ -8,11 +8,10 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Alert, AlertDescription } from "@/components/ui/alert"
 import { CheckCircle, Home, FileText } from "lucide-react"
-import { createClient } from "@supabase/supabase-js"
-
-const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL!, process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!)
+import { createClient } from "@/lib/supabase/client"
 
 export default function RegisterSuccessPage() {
+  const supabase = createClient()
   const searchParams = useSearchParams()
   const [isLoading, setIsLoading] = useState(true)
   const [saveStatus, setSaveStatus] = useState<{

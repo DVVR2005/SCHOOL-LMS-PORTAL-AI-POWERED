@@ -9,6 +9,13 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  // Fix Turbopack workspace root inference issues.
+  // __dirname is not available in ES module scope.
+  turbopack: {
+    root: new URL('.', import.meta.url).pathname,
+  },
+
 }
 
 export default nextConfig
+

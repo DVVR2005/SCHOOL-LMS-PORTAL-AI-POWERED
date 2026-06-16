@@ -1,12 +1,64 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Menu, X } from "lucide-react"
+import { Menu, X, LogOut, LayoutDashboard } from "lucide-react"
+import { createClient } from "@/lib/supabase/client"
+import { useRouter } from "next/navigation"
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
+  const [user, setUser] = useState<any>(null)
+  const [role, setRole] = useState<string | null>(null)
+  const router = useRouter()
+
+  useEffect(() => {
+    const supabase = createClient()
+    
+    // Fetch initial user
+    supabase.auth.getUser().then(({ data }: any) => {
+      const user = data?.user
+      setUser(user)
+      if (user) {
+        supabase
+          .from("users")
+          .select("role")
+          .eq("id", user.id)
+          .single()
+          .then(({ data }: any) => {
+            setRole(data?.role || null)
+          })
+      }
+    })
+
+    // Listen for auth state changes
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((event: any, session: any) => {
+      setUser(session?.user ?? null)
+      if (session?.user) {
+        supabase
+          .from("users")
+          .select("role")
+          .eq("id", session.user.id)
+          .single()
+          .then(({ data }: any) => {
+            setRole(data?.role || null)
+          })
+      } else {
+        setRole(null)
+      }
+    })
+
+    return () => {
+      subscription.unsubscribe()
+    }
+  }, [])
+
+  const handleSignOut = async () => {
+    const supabase = createClient()
+    await supabase.auth.signOut()
+    router.push("/login")
+  }
 
   const navigation = [
     { name: "Home", href: "/" },
@@ -30,12 +82,12 @@ export default function Navigation() {
             </div>
             <div>
               <div className="text-lg font-bold text-gray-900">NAVS Global School</div>
-              <div className="text-xs text-amber-600">Excellence in Education</div>
+              <div className="text-xs text-amber-600">ERP & LMS Portal</div>
             </div>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-8">
+          <div className="hidden lg:flex items-center space-x-6">
             {navigation.map((item) => (
               <Link
                 key={item.name}
@@ -46,11 +98,32 @@ export default function Navigation() {
               </Link>
             ))}
 
-            <Link href="/register">
-              <Button className="bg-amber-600 hover:bg-amber-700 text-white px-6 py-2 rounded-lg font-medium">
-                Apply Now
-              </Button>
-            </Link>
+            {user ? (
+              <div className="flex items-center space-x-4 pl-4 border-l border-gray-200">
+                <Link href={role ? `/${role}` : "/"}>
+                  <Button className="bg-amber-600 hover:bg-amber-700 text-white flex items-center gap-2">
+                    <LayoutDashboard className="h-4 w-4" />
+                    Dashboard
+                  </Button>
+                </Link>
+                <Button variant="ghost" size="icon" onClick={handleSignOut} className="text-gray-500 hover:text-red-600">
+                  <LogOut className="h-5 w-5" />
+                </Button>
+              </div>
+            ) : (
+              <div className="flex items-center space-x-3 pl-4 border-l border-gray-200">
+                <Link href="/login">
+                  <Button variant="outline" className="border-amber-600 text-amber-700 hover:bg-amber-50">
+                    Sign In
+                  </Button>
+                </Link>
+                <Link href="/register">
+                  <Button className="bg-amber-600 hover:bg-amber-700 text-white">
+                    Apply Now
+                  </Button>
+                </Link>
+              </div>
+            )}
           </div>
 
           {/* Mobile menu button */}
@@ -74,11 +147,31 @@ export default function Navigation() {
                 </Link>
               ))}
 
-              <Link href="/register" onClick={() => setIsOpen(false)}>
-                <Button className="w-full mt-4 bg-amber-600 hover:bg-amber-700 text-white py-2 rounded-lg font-medium">
-                  Apply Now
-                </Button>
-              </Link>
+              {user ? (
+                <div className="pt-4 border-t flex flex-col space-y-2">
+                  <Link href={role ? `/${role}` : "/"} onClick={() => setIsOpen(false)}>
+                    <Button className="w-full bg-amber-600 hover:bg-amber-700 text-white">
+                      Dashboard
+                    </Button>
+                  </Link>
+                  <Button variant="outline" className="w-full text-red-600 hover:bg-red-50" onClick={() => { setIsOpen(false); handleSignOut(); }}>
+                    Sign Out
+                  </Button>
+                </div>
+              ) : (
+                <div className="pt-4 border-t flex flex-col space-y-2">
+                  <Link href="/login" onClick={() => setIsOpen(false)}>
+                    <Button variant="outline" className="w-full border-amber-600 text-amber-700">
+                      Sign In
+                    </Button>
+                  </Link>
+                  <Link href="/register" onClick={() => setIsOpen(false)}>
+                    <Button className="w-full bg-amber-600 hover:bg-amber-700 text-white">
+                      Apply Now
+                    </Button>
+                  </Link>
+                </div>
+              )}
             </div>
           </div>
         )}
