@@ -472,7 +472,7 @@ export default function AboutPage() {
             <Link href="/contact">
               <Button
                 variant="outline"
-                className="border-white text-white hover:bg-white hover:text-slate-900 px-6 md:px-8 py-3 text-base md:text-lg rounded-lg w-full sm:w-auto"
+                className="border-white bg-transparent text-white hover:bg-white hover:text-slate-900 px-6 md:px-8 py-3 text-base md:text-lg rounded-lg w-full sm:w-auto"
               >
                 Contact Us
               </Button>

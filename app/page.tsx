@@ -167,7 +167,7 @@ export default function HomePage() {
             <Link href="/contact">
               <Button
                 variant="outline"
-                className="border-white text-white hover:bg-white hover:text-amber-600 px-8 py-3 text-lg rounded-lg"
+                className="border-white bg-transparent text-white hover:bg-white hover:text-amber-600 px-8 py-3 text-lg rounded-lg"
               >
                 <Phone className="mr-2 h-5 w-5" />
                 Contact Us

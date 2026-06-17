@@ -41,7 +41,7 @@ export default function AdmissionsPage() {
               <Link href="/contact">
                 <Button
                   variant="outline"
-                  className="border-2 border-white text-white hover:bg-white/10 px-6 md:px-8 py-3 md:py-4 text-lg md:text-xl rounded-xl w-full sm:w-auto"
+                  className="border-2 border-white bg-transparent text-white hover:bg-white/10 px-6 md:px-8 py-3 md:py-4 text-lg md:text-xl rounded-xl w-full sm:w-auto"
                 >
                   Schedule a Tour
                 </Button>
@@ -202,7 +202,7 @@ export default function AdmissionsPage() {
             <Link href="/contact">
               <Button
                 variant="outline"
-                className="border-white text-white hover:bg-white/10 px-6 md:px-8 py-3 text-base md:text-lg rounded-lg w-full sm:w-auto"
+                className="border-white bg-transparent text-white hover:bg-white/10 px-6 md:px-8 py-3 text-base md:text-lg rounded-lg w-full sm:w-auto"
               >
                 Request Information
               </Button>
